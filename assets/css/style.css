@@ -32,13 +32,13 @@
 }
 
 .input {
+  appearance: none;
   background-color: #fbfbfb;
   border: solid 1px #d9d9d9;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 14px;
   height: 35px;
-  appearance: none;
   -webkit-appearance: none;
   padding: 5px;
   width: 100%;
@@ -121,7 +121,7 @@
   font-size: 12px;
   margin: 20px 0;
 }
-/* form-content　css */
+
 .devider::after, .devider::before {
   background: #bbb;
   box-sizing: border-box;
@@ -130,6 +130,8 @@
   height: 1px;
   margin: 0 .4em;
 }
+
+/* form-content　css */
 
 .form {
   color: #555;
@@ -152,6 +154,7 @@
 
 .radio_button {
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .radio_button_input {
@@ -161,7 +164,6 @@
 .radio_button span {
   padding-left: 20px;
   position: relative;
-  margin-right: 10px;
 }
 
 .radio_button span::before {
