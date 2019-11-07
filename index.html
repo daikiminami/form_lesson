@@ -10,6 +10,83 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <div class="wrapper">
+      <div class="inner">
+        <div class="main">
+          <h1 class="main-title">アカウント作成</h1>
+          <div class="sns-button_box">
+            <a href="" class="button-layout is-facebook">Facebookでスタート</a>
+            <a href="" class="button-layout is-google">Googleでスタート</a>
+          </div>
+            <p class="top-content-text">タイムラインへの投稿を行うことや、アカウント情報を伝えることはありません。</p>
+            <p class="devider">アカウント情報</p>
+          <form action="" class="form" method="POST">
+            <div class="box names_box">
+              <div class="name_box">
+                <p class="form-title name-title">名字</p>
+                <input type="text" name="lastname"  class="input form_name_input" required>
+              </div>
+              <div class="name_box">
+                <p class="form-title name-title">名前</p>
+                <input type="text" name="firstname"  class="input form_name_input" required>
+              </div>
+            </div>
+            <div class="box">
+              <p class="form-title">性別</p>
+              <div class="radio_button_box">
+                <label class="radio_button"><input type="radio" name="gender" value="male" class="radio_button_input"><span>男性</span></label>
+                <label class="radio_button"><input type="radio" name="gender" value="female" class="radio_button_input"><span>女性</span></label>
+                <label class="radio_button"><input type="radio" name="gender" value="other" class="radio_button_input"><span>その他</span></label>
+              </div>
+            </div>
+            <div class="box">
+              <p class="form-title">出身</p>
+              <div class="select_from_box">
+                <select name="from" class="select_from">
+                  <option value="tokyo">東京</option>
+                  <option value="tiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="box">
+              <p class="form-title mail-title">Eメール</p>
+              <input type="email" name="mail" class="input mail_input" placeholder=" ex) hoge@example.com" required>
+            </div>
+            <div class="box">
+              <p class="form-title">電話番号</p>
+              <input type="tel" name="phonenumber" class="input phonenumber_input" placeholder=" ex) 09012345678">
+            </div>
+            <div class="box">
+              <p class="form-title password-title">パスワード</p>
+              <input type="password" name="password" class="input password_input" required>
+            </div>
+            <div class="box">
+              <p class="form-title password-title">パスワード(確認用)</p>
+              <input type="password" name="password2" class="input password_input" required>
+            </div>
+            <div class="box checkbox_course">
+              <p class="form-title">希望コース</p>
+              <p class="checkbox"><label class="checkbox_course"><input type="checkbox" name="course" value="frontend" class="checkbox_input"><span>フロントエンド</span></label></p>
+              <p class="checkbox"><label class="checkbox_course"><input type="checkbox" name="course" value="backend" class="checkbox_input"><span>バックエンド</span></label></p>
+              <p class="checkbox"><label class="checkbox_course"><input type="checkbox" name="course" value="app" class="checkbox_input"><span>アプリ</span></label></p>
+            </div>
+            <div class="box textarea_box">
+              <p class="form-title">備考</p>
+              <textarea name="other" placeholder="何かあればご記入ください" class="input textarea"></textarea>
+            </div>
+            <button type="submit" name="button" class="button box">アカウント作成</button>
+          </form>
+          <p class="inner-text">アカウントを作成することにより、<a href="#" class="link-text">利用規約</a>と<a href="#" class="link-text">プライバシーポリシー</a>に同意するものとします。</p>
+        </div>
+        <footer>
+          <div class="footer">
+            <p class="footer-text">すでにアカウントをお持ちですか？<a href="#" class="link-text">ログイン</a></p>
+            <a href="#" class="link-text">認証メールが届きませんか？</a>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
