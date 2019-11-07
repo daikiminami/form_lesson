@@ -13,9 +13,9 @@
 
 .main {
   background-color: #fff;
-  border: solid 1px #D3D3D3;
+  border: solid 1px #d3d3d3;
   box-sizing: border-box;
-  box-shadow: 0 0 2px 1px #D3D3D3;
+  box-shadow: 0 0 2px 1px #d3d3d3;
   border-radius: 5px;
   padding: 48px 64px;
   margin-bottom: 32px;
@@ -45,8 +45,8 @@
 }
 
 .input:focus {
-  border: solid 1px #99FF99;
-  box-shadow: 0 0 2px 1px #CCFFCC;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
   outline: none;
 }
 
@@ -91,13 +91,13 @@
 
 .is-facebook {
   background-color: #3b5998;
-  border: #3B5998;
+  border: #3b5998;
   color: #fff;
 }
 
 .is-google {
   background-color: #fff;
-  border: solid 1px #D3D3D3;
+  border: solid 1px #d3d3d3;
   color: #f00;
 }
 
@@ -154,7 +154,11 @@
 
 .radio_button {
   cursor: pointer;
-  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.radio_button:first-child {
+  margin-left: 0;
 }
 
 .radio_button_input {
@@ -205,6 +209,7 @@
   position: absolute;
   top: 40%;
   left: 47%;
+  pointer-events: none;
 }
 
 .select_from {
@@ -252,8 +257,8 @@
 }
 
 .checkbox_input:checked + span::after {
-  border-bottom: 3px solid #009a9a;
-  border-right: 3px solid #009a9a;
+  border-bottom: 3px solid #01bfbd;
+  border-right: 3px solid #01bfbd;
   content: "";
   position: absolute;
   top: -5px;
@@ -291,9 +296,13 @@
   color: #009a9a;
   opacity: 1.0;
 }
+.button.box{
+  margin-bottom: 0;
+}
 
 .inner-text {
   font-size: 13px;
+  margin-top: 20px;
   line-height: 1.5;
 }
 
