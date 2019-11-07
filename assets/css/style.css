@@ -50,6 +50,11 @@
   outline: none;
 }
 
+.required:after {
+  content: "  ※";
+  color: #ee0000;
+}
+
 /* topcontent css */
 .top-content-text {
   text-align: center;
@@ -128,11 +133,6 @@
 
 .form {
   color: #555;
-}
-
-.name-title::after {
-  content: "  ※";
-  color: #ee0000;
 }
 
 .names_box {
@@ -220,16 +220,6 @@
 
 .select_from::-ms-expand {
   display: none;
-}
-
-.mail-title:after {
-  content: "  ※";
-  color: #ee0000;
-}
-
-.password-title:after {
-  content: "  ※";
-  color: #ee0000;
 }
 
 .checkbox {
