@@ -227,6 +227,9 @@
 .checkbox {
   margin-bottom: 15px;
 }
+.checkbox:last-child {
+  margin-bottom: 0;
+}
 
 .checkbox_input {
   display: none;
